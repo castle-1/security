@@ -35,7 +35,7 @@
 
    </bean>
    <!-- 1번 방식 사용을 위한 sqlSession -->
-   <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
       <constructor-arg index="0" ref="sqlSessionFactory" />
    </bean>
    
@@ -44,6 +44,9 @@
     </bean>
     
    <tx:annotation-driven transaction-manager="transactionManager" />
+   
+   <!-- 마이바티스 인터페이스 -->
+   <mybatis-spring:scan base-package="edu.bit.ex.mapper"/>
 
       
 </beans>

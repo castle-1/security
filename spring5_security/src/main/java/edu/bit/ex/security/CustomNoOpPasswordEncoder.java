@@ -15,9 +15,9 @@ public class CustomNoOpPasswordEncoder implements PasswordEncoder {
    }
 
    public boolean matches(CharSequence rawPassword, String encodedPassword) {
-
-      log.warn("matches: " + rawPassword + ":" + encodedPassword);
-
+	  //BCryptPasswordEncoder bcry = new BCryptPasswordEncoder();
+      log.warn("matches: " + rawPassword + ":" + encodedPassword);      	
+      //return bcry.matches(rawPassword, encodedPassword);
       return rawPassword.toString().equals(encodedPassword);
    }
 
