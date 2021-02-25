@@ -23,7 +23,8 @@ public class MemberDetailsService implements UserDetailsService  {
    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
       //로그인을 하게되면 반드시 호출
 	  //userdetails 형으로(--> new MemberUser(vo) )
-	   
+	  //session에 올려두어야 한다.
+	  //UserDetails의 세션은 principal이 가지고 있다.
 	   
       log.warn("Load User By MemberVO number: " + username);      
       MemberVO vo = memberMapper.getMember(username);      

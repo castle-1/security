@@ -38,7 +38,7 @@
 	              Remember me
 	              </label>
 	          </div>
-<%-- 	          <input name="${_csrf.parameterName}" type="hidden" value="${_csrf.token}"/> --%>
+	          <input name="${_csrf.parameterName}" type="hidden" value="${_csrf.token}"/>
 	          <button type="submit" class="btn btn-primary">Sign in</button>
 	   </form:form>
 	      <div class="dropdown-divider"></div>

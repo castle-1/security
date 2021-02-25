@@ -17,7 +17,7 @@ import lombok.ToString;
 @ToString
 public class MemberUser extends User {
 	
-	   private MemberVO member;
+	   private MemberVO member; //view단에서 getMember 호출
 	   
 	   //기본적으로 부모의 생성자를 호출해야만 정상적으로 작동
 
