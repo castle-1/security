@@ -16,6 +16,8 @@ import lombok.extern.log4j.Log4j;
 @Controller
 public class CurityController {
 	
+	
+	
 	@GetMapping("/all")
 	public void doAall() {
 		log.info("do all can access everybody");
